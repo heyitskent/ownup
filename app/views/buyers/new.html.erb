@@ -1,0 +1,40 @@
+<main>
+ <div class="masterheader">
+  <%= link_to 'ownUp', root_path %>
+ </div>
+ 
+ <div style="text-left: center; font-family:futura;">
+  <h2>Looking to own up? Create an Account.</h2>
+ </div>
+
+<div class="buyer_create">
+	<%= form_for @buyer do |f| %>
+   		<label>
+    		Email address: <%= f.text_field :email %>
+   			<br />
+   		</label>
+
+		
+
+		<label>
+    		Password: <%= f.password_field :password %>
+    		<br />
+  		</label>
+
+  		<label> 
+  			Confirm password: <%= f.password_field :password_confirmation %>
+  			<br />
+  		</label>
+  		<%= f.submit %>
+</div>
+	<% end %>
+
+
+
+	<!-- <footer style="text-align: center; font-family:futura; position:relative; padding-top:5px; height:50px; width:100%; color: white; background-color:#171717"> -->
+	<div class="masterfooter">
+	 <div>
+	  <p> about us | terms and conditions | careers</p>
+	 </div>
+	</div>
+ </main>

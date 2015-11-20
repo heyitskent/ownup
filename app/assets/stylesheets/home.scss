@@ -1,0 +1,23 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.home_headline {
+	position: absolute;	
+	top: 5%;
+	left: 17%;
+	font-family: futura; 
+	font-size:54px;
+	color: #484d4d; 
+	text-align: center;
+}
+
+.home_body {
+	position: absolute;	
+	top: 45%;
+	left: 30%;
+	font-family:futura; 
+	font-size:22px;
+	color: #484d4d; 
+	padding-top: 50px;
+}

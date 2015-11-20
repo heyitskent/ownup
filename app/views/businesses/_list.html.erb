@@ -1,0 +1,40 @@
+
+<!-- array of difft search results. we're going to loop over it.  -->
+
+<% @businesses.each do |business| %> 
+   <section style="margin:45px">
+   <div style="text-align:left; font-family:futura">
+    <div style="font-size:18px">
+     <%= business.business_name %> | <%= business.industry %> | <%= business.city %><br/>
+    </div>
+     <%= business.description %>
+	</p>
+	
+   </div>
+   </section>
+  
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- <section>
+		<h3><%= business.business_name %></h3>
+		<p>
+			<%= business.description %>
+		</p>
+		<p>
+			<%= business.industry %>
+		</p>
+	</section> -->
+<% end %>

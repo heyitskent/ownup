@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  business_name: MyString
+  description: MyString
+  industry: MyString
+  city: MyString
+  cash_on_hand: 1
+  employees: 1
+  revenue: MyString
+  integer: MyString
+
+two:
+  business_name: MyString
+  description: MyString
+  industry: MyString
+  city: MyString
+  cash_on_hand: 1
+  employees: 1
+  revenue: MyString
+  integer: MyString

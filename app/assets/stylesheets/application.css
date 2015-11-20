@@ -1,0 +1,118 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+    background-color: #c5f4f4;
+}
+
+.masterheader {
+    text-align: center; 
+    font-family: futura; 
+    font-size: 24px; 
+    padding-top:5px; 
+    position:fixed; 
+    top: 0px; 
+    height:45px; 
+    width:100%; 
+    color: white; 
+    text-decoration: none; 
+    background-color:#484d4d;
+}
+
+.masterfooter {
+	text-align: center; 
+	font-family: futura; 
+	position: fixed; 
+	bottom: 0px; 
+	height: 50px; 
+	width: 100%; 
+	color: white; 
+	background-color: #484d4d; 
+}
+
+
+
+
+
+.masterfooter a:link {
+   color: white;
+}
+/* visited link */
+.masterfooter a:visited {
+   color: white;
+}
+/* mouse over link */
+.masterfooter a:hover {
+   color: white;
+}
+/* selected link */
+.masterfooter a:active {
+   color: white;
+}
+
+.masterfooter a:link {
+    text-decoration: none;
+}
+
+.masterfooter a:visited {
+    text-decoration: none;
+}
+
+.masterfooter a:hover {
+    text-decoration: underline;
+}
+
+.masterfooter a:active {
+    text-decoration: underline;
+} 
+
+/* ---- */
+
+.masterheader a:link {
+   color: white;
+}
+/* visited link */
+.masterheader a:visited {
+   color: white;
+}
+/* mouse over link */
+.masterheader a:hover {
+   color: white;
+}
+/* selected link */
+.masterheader a:active {
+   color: white;
+}
+
+.masterheader a:link {
+    text-decoration: none;
+}
+
+.masterheader a:visited {
+    text-decoration: none;
+}
+
+.masterheader a:hover {
+    text-decoration: underline;
+}
+
+.masterheader a:active {
+    text-decoration: underline;
+} 
+
+
+
+
