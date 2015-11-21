@@ -1,11 +1,28 @@
 
 
-<div class="buyer_login">
+<div class="buyer_profile">
+	<p>your account</p>
+	<p>name: <%= @buyer.first_name =%> <%= @buyer.last_name =%>
 	<p>email: <%= @buyer.email =%></p> 
+	<p>your spending limit: $<%= @buyer.spend_limit =%></p> 
+	<p>city: <%= @buyer.city =%></p> 
+	<p>industry interests: <%= @buyer.industry_interests =%></p> 
+</div>
+
+
+
+
+<div class="buyer_nav">
+	<p><%= link_to '[see the opportunities]', businesses_index_path %></p>    
+
 	<p><%= link_to '[log out]', logout_path %>
 </div>
 
-<%= link_to '[create an account]', buyers_new_path %>
+
+<div class="buyer_payment">
+	<p>Ready for a full membership? <br /> <%= link_to '[Sign up now.]', new_charge_path %></p>
+
+</div>
 
 
 <div class="masterfooter">

@@ -3,21 +3,27 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .home_headline {
+	padding-top: 100px;
+	text-align: center;
 	position: absolute;	
-	top: 5%;
-	left: 17%;
+	height: 100%;
+	width: 100%;
 	font-family: futura; 
 	font-size:54px;
 	color: #484d4d; 
-	text-align: center;
+	
 }
 
 .home_body {
 	position: absolute;	
 	top: 45%;
-	left: 30%;
+	width: 100%;
 	font-family:futura; 
 	font-size:22px;
 	color: #484d4d; 
-	padding-top: 50px;
+	padding-top: 100px;
+	padding-bottom: 75px;
+
 }
+
+

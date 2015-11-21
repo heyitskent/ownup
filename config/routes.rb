@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   resources :business
   resources :buyers
+  resources :charges
 
   get 'signup', to: 'buyers#new'
 
@@ -13,6 +14,12 @@ Rails.application.routes.draw do
 
   get 'businesses/show'
 
+  get 'businesses/index'
+
+  get 'buyers/show'
+  
+  get 'charges/new'
+  
 # --------------------- #
   get 'buyers/new'
 
@@ -24,11 +31,11 @@ Rails.application.routes.draw do
 
   get 'buyers/destroy'
 
-  get 'buyers/show'
+ 
 
 
 
-  get 'businesses/index'
+
 
   get 'businesses/new'
 

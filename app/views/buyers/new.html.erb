@@ -1,28 +1,51 @@
-<main>
- <div class="masterheader">
-  <%= link_to 'ownUp', root_path %>
- </div>
+
  
- <div style="text-left: center; font-family:futura;">
+ <div class="buyer_create_header">
   <h2>Looking to own up? Create an Account.</h2>
  </div>
 
-<div class="buyer_create">
+<div class="buyer_create_main">
 	<%= form_for @buyer do |f| %>
    		<label>
-    		Email address: <%= f.text_field :email %>
+        first name: <%= f.text_field :first_name %> 
+        <br />
+      </label>
+      
+      <label>
+        last name: <%= f.text_field :last_name %> 
+        <br />
+      </label>
+
+      <label>
+    		email address: <%= f.text_field :email %>
    			<br />
    		</label>
 
-		
+      <label>
+        spending limit: <%= f.text_field :spend_limit %>
+        <br />
+      </label>
+
+  <label>
+        city: <%= f.text_field :city %>
+        <br />
+      </label>
+
+ <label>
+        industries of interest: <%= f.text_field :industry_interests %>
+        <br />
+      </label>
+
+ 
+
 
 		<label>
-    		Password: <%= f.password_field :password %>
+    		password: <%= f.password_field :password %>
     		<br />
   		</label>
 
   		<label> 
-  			Confirm password: <%= f.password_field :password_confirmation %>
+  			confirm password: <%= f.password_field :password_confirmation %>
   			<br />
   		</label>
   		<%= f.submit %>

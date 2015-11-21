@@ -1,6 +1,15 @@
 
+.buyer_create_header {
+	position: absolute;	
+	top: 15%;
+	left: 37%;
+	font-family: futura; 
+	font-size:24px;
+	color: #484d4d; 
+}
 
-.buyer_create {
+
+.buyer_create_main {
 	position: absolute;	
 	top: 40%;
 	left: 37%;
@@ -25,5 +34,33 @@
 	font-family: futura; 
 	font-size:24px;
 	color: #f45844; 
+}
 
+
+.buyer_profile {
+	position: absolute;	
+	top: 30%;
+	left: 20%;
+	font-family: futura; 
+	font-size:24px;
+	color: #484d4d; 
+}
+
+.buyer_payment {
+	position: absolute;	
+	top: 30%;
+	left: 60%;
+	font-family: futura; 
+	font-size:24px;
+	color: #484d4d; 
+}
+
+.buyer_nav {
+	position: absolute;	
+	top: 65%;
+	left: 20%;
+	padding-top: 25px;
+	font-family: futura; 
+	font-size:24px;
+	color: #484d4d; 
 }

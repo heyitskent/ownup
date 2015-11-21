@@ -2,18 +2,17 @@
 <!-- array of difft search results. we're going to loop over it.  -->
 
 <% @businesses.each do |business| %> 
-   <section style="margin:45px">
    <div style="text-align:left; font-family:futura">
-    <div style="font-size:18px">
-     <%= business.business_name %> | <%= business.industry %> | <%= business.city %><br/>
-    </div>
+    <%= link_to business.business_name, businesses_show_path %> | <%= business.industry %> | <%= business.city %>
+     <br/>
+   </div>
+   <div style="font-size:20px; padding-bottom:25px;">
      <%= business.description %>
 	</p>
-	
    </div>
-   </section>
   
    
+
 
 
 
