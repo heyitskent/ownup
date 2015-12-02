@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'home#index'
 
-  resources :business
+  resources :businesses
   resources :buyers
   resources :charges
 
@@ -12,44 +12,12 @@ Rails.application.routes.draw do
 
   get 'logout', to: 'buyers#logout'
 
-  get 'businesses/show'
-
-  get 'businesses/index'
-
-  get 'buyers/show'
+  get 'index', to: 'businesses#index'
   
-  get 'charges/new'
-  
+  get 'index', to: 'businesses#index'
 # --------------------- #
-  get 'buyers/new'
-
-  get 'buyers/create'
-
-  get 'buyers/update'
-
-  get 'buyers/edit'
-
-  get 'buyers/destroy'
 
  
-
-
-
-
-
-  get 'businesses/new'
-
-  get 'businesses/create'
-
-  get 'businesses/update'
-
-  get 'businesses/edit'
-
-  get 'businesses/destroy'
-
-  
-
-
   # get 'home/create'
 
   # get 'home/update'

@@ -114,5 +114,12 @@ body {
 } 
 
 
-
+.charges_create_main {
+  position: absolute; 
+  top: 40%;
+  left: 37%;
+  font-family: futura; 
+  font-size:24px;
+  color: #484d4d; 
+}
 

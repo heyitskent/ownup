@@ -1,13 +1,9 @@
 class BusinessesController < ApplicationController
   before_action :restrict_access, only: [:show]
 
-  def restrict_access
-    redirect_to login_path if @current_buyer.nil?
-  end
-
 
   def index
-     @businesses = Business.all
+     @business = Business.all
   end
 
   def new
@@ -26,6 +22,15 @@ class BusinessesController < ApplicationController
   end
 
   def show
-    @business = Business.find(params[:business_id])
+    @business = Business.find(params[:id])
   end
 end
+
+
+  private
+    # This needs to be private because its not
+    # a method that can be called via URL. Its
+    # internal only.
+    def restrict_access
+      redirect_to login_path if @current_buyer.nil? || !@current_buyer
+    end

@@ -1,7 +1,7 @@
 
 
 <div class="buyer_profile">
-	<p>your account</p>
+	<p><h1>your account</h1></p>
 	<p>name: <%= @buyer.first_name =%> <%= @buyer.last_name =%>
 	<p>email: <%= @buyer.email =%></p> 
 	<p>your spending limit: $<%= @buyer.spend_limit =%></p> 
@@ -13,14 +13,14 @@
 
 
 <div class="buyer_nav">
-	<p><%= link_to '[see the opportunities]', businesses_index_path %></p>    
+	<p><%= link_to '[see the opportunities]', index_path %></p>    
 
 	<p><%= link_to '[log out]', logout_path %>
 </div>
 
 
 <div class="buyer_payment">
-	<p>Ready for a full membership? <br /> <%= link_to '[Sign up now.]', new_charge_path %></p>
+	<p><strong>ready for a full membership?</strong><br /><%= link_to '[sign up now]', new_charge_path %></p>
 
 </div>
 

@@ -10,6 +10,11 @@
 <body>
  <div class="masterheader">	
   <%= link_to 'ownUp', root_path %> 
+  <span style="margin-left:65%; font-size:18px">
+   <% unless @current_buyer.nil? || @current_buyer == 0 %> 
+    <%= link_to("my profile", buyer_path(@current_buyer.id)) %> | <%= link_to("log out", logout_path) %>
+   <%  end %>
+  </span>
 </div>
 
 
